@@ -1,0 +1,38 @@
+.btn-lg {
+    border: 1px solid black;
+    background: none;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.btn-sm {
+    border: 1px solid black;
+    background: none;
+    padding: 15px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.fill-up::before {
+    content: "";
+    height: 0%;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.fill-up:hover{
+    color: white;
+    transition: 0.7s;
+}
+.fill-up:hover::before{
+    height: 100%;
+    transition: 0.5s;
+}
