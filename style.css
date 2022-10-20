@@ -34,5 +34,5 @@
 }
 .fill-up:hover::before{
     height: 100%;
-    transition: 0.5s;
+    transition: 0.6s;
 }
